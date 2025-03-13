@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='GPU_benchmarks_v7' inline='true' name='federated.0putewr154dbl618w1it007pepjn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GPU_benchmarks_v7' name='textscan.0ae50bi1hen8x91ezdou10ujzi9s'>
+            <connection class='textscan' directory='C:/Users/rapdo/Downloads/archive' filename='GPU_benchmarks_v7.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ae50bi1hen8x91ezdou10ujzi9s' name='GPU_benchmarks_v7.csv' table='[GPU_benchmarks_v7#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='gpuName' ordinal='0' />
+            <column datatype='integer' name='G3Dmark' ordinal='1' />
+            <column datatype='integer' name='G2Dmark' ordinal='2' />
+            <column datatype='real' name='price' ordinal='3' />
+            <column datatype='real' name='gpuValue' ordinal='4' />
+            <column datatype='integer' name='TDP' ordinal='5' />
+            <column datatype='real' name='powerPerformance' ordinal='6' />
+            <column datatype='integer' name='testDate' ordinal='7' />
+            <column datatype='string' name='category' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gpuName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gpuName]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>gpuName</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G3Dmark</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G3Dmark]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>G3Dmark</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>G2Dmark</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[G2Dmark]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>G2Dmark</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gpuValue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gpuValue]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>gpuValue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TDP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TDP]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>TDP</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>powerPerformance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[powerPerformance]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>powerPerformance</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>testDate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[testDate]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>testDate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[GPU_benchmarks_v7.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='GPU_benchmarks_v7.csv' datatype='table' name='[__tableau_internal_object_id__].[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Gpu Name' datatype='string' name='[gpuName]' role='dimension' type='nominal' />
+      <column caption='Gpu Value' datatype='real' name='[gpuValue]' role='measure' type='quantitative' />
+      <column caption='Power Performance' datatype='real' name='[powerPerformance]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Test Date' datatype='integer' name='[testDate]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/rapdo/AppData/Local/Temp/TableauTemp/#TableauTemp_1ljiwjo0dmcthj11crscp0p6l65l.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/06/2025 12:30:03 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>gpuName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gpuName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gpuName</remote-alias>
+              <ordinal>0</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2317</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>G3Dmark</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[G3Dmark]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>G3Dmark</remote-alias>
+              <ordinal>1</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1152</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>G2Dmark</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[G2Dmark]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>G2Dmark</remote-alias>
+              <ordinal>2</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>721</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>369</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gpuValue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gpuValue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gpuValue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>421</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TDP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TDP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TDP</remote-alias>
+              <ordinal>5</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>127</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>powerPerformance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[powerPerformance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>powerPerformance</remote-alias>
+              <ordinal>6</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>585</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>testDate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[testDate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>testDate</remote-alias>
+              <ordinal>7</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>8</ordinal>
+              <family>GPU_benchmarks_v7.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='GPU_benchmarks_v7.csv' id='GPU_benchmarks_v7.csv_8DFB914AA10E40BBAD5DB0C738E5B5FC'>
+            <properties context=''>
+              <relation connection='textscan.0ae50bi1hen8x91ezdou10ujzi9s' name='GPU_benchmarks_v7.csv' table='[GPU_benchmarks_v7#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+                  <column datatype='string' name='gpuName' ordinal='0' />
+                  <column datatype='integer' name='G3Dmark' ordinal='1' />
+                  <column datatype='integer' name='G2Dmark' ordinal='2' />
+                  <column datatype='real' name='price' ordinal='3' />
+                  <column datatype='real' name='gpuValue' ordinal='4' />
+                  <column datatype='integer' name='TDP' ordinal='5' />
+                  <column datatype='real' name='powerPerformance' ordinal='6' />
+                  <column datatype='integer' name='testDate' ordinal='7' />
+                  <column datatype='string' name='category' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GPU_benchmarks_v7' name='federated.0putewr154dbl618w1it007pepjn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0putewr154dbl618w1it007pepjn'>
+            <column datatype='integer' name='[G3Dmark]' role='measure' type='quantitative' />
+            <column-instance column='[powerPerformance]' derivation='Avg' name='[avg:powerPerformance:qk]' pivot='key' type='quantitative' />
+            <column caption='Gpu Name' datatype='string' name='[gpuName]' role='dimension' type='nominal' />
+            <column caption='Gpu Value' datatype='real' name='[gpuValue]' role='measure' type='quantitative' />
+            <column-instance column='[gpuName]' derivation='None' name='[none:gpuName:nk]' pivot='key' type='nominal' />
+            <column caption='Power Performance' datatype='real' name='[powerPerformance]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[G3Dmark]' derivation='Sum' name='[sum:G3Dmark:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gpuValue]' derivation='Sum' name='[sum:gpuValue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0putewr154dbl618w1it007pepjn].[avg:powerPerformance:qk]' included-values='in-range'>
+            <min>0.63</min>
+          </filter>
+          <slices>
+            <column>[federated.0putewr154dbl618w1it007pepjn].[avg:powerPerformance:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0putewr154dbl618w1it007pepjn].[sum:gpuValue:qk]' field-type='quantitative' max='12.848875598607165' min='2.3376817970106192' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0putewr154dbl618w1it007pepjn].[sum:price:qk]' field-type='quantitative' max='2850.5528714373095' min='1494.3375526153577' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0putewr154dbl618w1it007pepjn].[sum:G3Dmark:qk]' />
+              <lod column='[federated.0putewr154dbl618w1it007pepjn].[none:gpuName:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0putewr154dbl618w1it007pepjn].[sum:price:qk]</rows>
+        <cols>[federated.0putewr154dbl618w1it007pepjn].[sum:gpuValue:qk]</cols>
+      </table>
+      <simple-id uuid='{BBD66C88-616E-4C18-819B-77055D37E386}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0putewr154dbl618w1it007pepjn].[avg:powerPerformance:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0putewr154dbl618w1it007pepjn].[sum:G3Dmark:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0putewr154dbl618w1it007pepjn].[none:category:nk]</field>
+            <field>[federated.0putewr154dbl618w1it007pepjn].[none:gpuName:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6F4A9FD4-A823-4E2B-9080-057D1AD4BB52}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
